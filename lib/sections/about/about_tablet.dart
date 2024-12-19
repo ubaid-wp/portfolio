@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
@@ -77,12 +78,15 @@ class AboutTab extends StatelessWidget {
               color: AppTheme.c!.primary,
             ),
           ),
-          Row(
-            children: kTools
-                .map(
-                  (e) => ToolTechWidget(techName: e),
-                )
-                .toList(),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: kTools
+                  .map(
+                    (e) => ToolTechWidget(techName: e),
+                  )
+                  .toList(),
+            ),
           ),
           Space.y!,
           Divider(
@@ -97,11 +101,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Name",
-                    information: "Ahtsham Mehboob",
+                    information: "Ubaid Rasool",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "31",
                   ),
                 ],
               ),
@@ -113,11 +117,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Email",
-                    information: "ahtsham50743@gmail.com",
+                    information: "ubaid.ips@gmail.com",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Bhakkar, PK",
+                    information: "Vehari, PK",
                   ),
                 ],
               ),

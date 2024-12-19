@@ -3,7 +3,6 @@ import 'package:folio/configs/app_dimensions.dart';
 
 class ScrollProvider extends ChangeNotifier {
   final scrollController = ScrollController();
-
   ScrollController get controller => scrollController;
   bool showScrollToTopButton = false;
 

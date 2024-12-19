@@ -17,7 +17,7 @@ class NavBarLogo extends StatelessWidget {
         //   ),
         // ),
         Text(
-          "Shami",
+          "Ubaid",
           style: AppText.b1b!.copyWith(
             fontFamily: 'Agustina',
             color: isDarkMode(context) ? Colors.white : Colors.black,

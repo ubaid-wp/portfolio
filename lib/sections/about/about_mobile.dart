@@ -1,4 +1,6 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
+import 'package:folio/configs/app_typography.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
@@ -70,20 +72,27 @@ class AboutMobile extends StatelessWidget {
             thickness: AppDimensions.normalize(0.5),
           ),
           Space.y!,
-          Text(
-            'Technologies I have worked with:',
-            style: AppText.l1!.copyWith(
-              color: AppTheme.c!.primary,
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Technologies I have worked with:',
+              textAlign: TextAlign.left,
+              style: AppText.l1!.copyWith(
+                color: AppTheme.c!.primary,
+              ),
             ),
           ),
           Space.y!,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: kTools
-                .map(
-                  (e) => ToolTechWidget(techName: e),
-                )
-                .toList(),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: kTools
+                  .map(
+                    (e) => ToolTechWidget(techName: e),
+                  )
+                  .toList(),
+            ),
           ),
           Space.y!,
           Divider(
@@ -93,22 +102,32 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.02,
           ),
-          const AboutMeData(
-            data: "Name",
-            information: "Ahtsham Mehboob",
-          ),
-          const AboutMeData(
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const AboutMeData(
+                data: "Name",
+                information: "Ubaid Rasool",
+                alignment: Alignment.centerLeft,
+              ),
+               const AboutMeData(
             data: "Email",
-            information: "ahtsham50743@gmail.com",
+            information: "ubaid.ips@gmail.com",
+            alignment: Alignment.centerLeft,
           ),
           Space.y!,
-          OutlinedButton(
-              child: const Text("Resume"),
-              onPressed: () {
+          InkWell(
+              child:  Text("Resume", style: AppText.b1!.copyWith(
+                color: AppTheme.c!.primary,
+              ),),
+              onTap: () {
                 kIsWeb
                     ? html.window.open(StaticUtils.resume, "pdf")
                     : openURL(StaticUtils.resume);
               }),
+            ],
+          ),
+         
           Space.y!,
           // Wrap(
           //     alignment: WrapAlignment.center,

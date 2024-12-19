@@ -54,11 +54,20 @@ class HomeMobile extends StatelessWidget {
                       StaticUtils.hi,
                       height: AppDimensions.normalize(10),
                     ),
+                    
                   ],
                 ),
                 Space.y!,
+                //  Text(
+                //       "I'm ",
+                //       style: AppText.b2!.copyWith(
+                //         fontFamily: 'Montserrat',
+                //         color:
+                //             isDarkMode(context) ? Colors.white : Colors.black,
+                //       ),
+                //     ),
                 Text(
-                  "Ahtsham",
+                  "Ubaid",
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
@@ -66,7 +75,7 @@ class HomeMobile extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Mehboob",
+                  "Rasool",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                     color: isDarkMode(context) ? Colors.white : Colors.black,
@@ -82,7 +91,7 @@ class HomeMobile extends StatelessWidget {
                     AnimatedTextKit(
                       animatedTexts: [
                         TyperAnimatedText(
-                          ' Flutter Developer',
+                          ' React Native Developer',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1!.copyWith(
                             color: isDarkMode(context)
@@ -90,15 +99,15 @@ class HomeMobile extends StatelessWidget {
                                 : Colors.black,
                           ),
                         ),
-                        TyperAnimatedText(
-                          ' Backend Developer',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1!.copyWith(
-                            color: isDarkMode(context)
-                                ? Colors.white
-                                : Colors.black,
-                          ),
-                        ),
+                        // TyperAnimatedText(
+                        //   ' Backend Developer',
+                        //   speed: const Duration(milliseconds: 50),
+                        //   textStyle: AppText.b1!.copyWith(
+                        //     color: isDarkMode(context)
+                        //         ? Colors.white
+                        //         : Colors.black,
+                        //   ),
+                        // ),
                         // TyperAnimatedText(
                         //   ' A friend :)',
                         //   speed: const Duration(milliseconds: 50),

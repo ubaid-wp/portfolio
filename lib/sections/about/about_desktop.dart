@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/constants.dart';
 import 'package:folio/utils/about_utils.dart';
@@ -84,12 +85,15 @@ class AboutDesktop extends StatelessWidget {
                         ),
                       ),
                       Space.y!,
-                      Row(
-                        children: kTools
-                            .map((e) => ToolTechWidget(
-                                  techName: e,
-                                ))
-                            .toList(),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: kTools
+                              .map((e) => ToolTechWidget(
+                                    techName: e,
+                                  ))
+                              .toList(),
+                        ),
                       ),
                       Space.y!,
                       Divider(
@@ -103,11 +107,11 @@ class AboutDesktop extends StatelessWidget {
                             children: [
                               AboutMeData(
                                 data: "Name",
-                                information: "Ahtsham Mehboob",
+                                information: "Ubaid Rasool",
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "31",
                               ),
                             ],
                           ),
@@ -117,11 +121,11 @@ class AboutDesktop extends StatelessWidget {
                             children: [
                               AboutMeData(
                                 data: "Email",
-                                information: "ahtsham50743@gmail.com",
+                                information: "ubaid@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Bhakkar, PK",
+                                information: "Vehari, PK",
                               ),
                             ],
                           ),

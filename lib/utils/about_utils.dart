@@ -1,7 +1,7 @@
 class AboutUtils {
   static const String aboutMeHeadline =
-      'I\'m Ahtsham Mehboob, a Flutter and backend developer.';
+      'I\'m Ubaid Rasool, a React Native developer.';
 
   static const String aboutMeDetail =
-      'I\'m a Fresh Graduate with Computer Science as Majors from Sargodha University, Bhakkar Campus. I have been developing mobile apps for over 2 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience.';
+      'Experienced React Native Developer with a strong focus on building high-quality, user-friendly mobile applications. Adept at collaborating with teams to deliver scalable solutions. Skilled in JavaScript, Redux, REST APIs, and deploying apps to App Store and Play Store. Experienced in both independent and team-based development with a proven track record of delivering impactful applications.';
 }

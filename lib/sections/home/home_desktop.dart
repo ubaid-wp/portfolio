@@ -69,9 +69,9 @@ class HomeDesktop extends StatelessWidget {
                     ),
                   ],
                 ),
-                Space.y1!,
+                // Space.y1!,
                 Text(
-                  "Ahtsham",
+                  "Ubaid",
                   style: AppText.h1!.copyWith(
                     fontFamily: 'Montserrat',
                     fontSize: AppDimensions.normalize(25),
@@ -80,7 +80,7 @@ class HomeDesktop extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Mehboob",
+                  "Rasool",
                   style: AppText.h1b!.copyWith(
                     fontSize: AppDimensions.normalize(25),
                     height: 1,
@@ -100,7 +100,7 @@ class HomeDesktop extends StatelessWidget {
                       AnimatedTextKit(
                         animatedTexts: [
                           TyperAnimatedText(
-                            ' Flutter Developer',
+                            ' React Native Developer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1!.copyWith(
                               color: isDarkMode(context)
@@ -109,7 +109,7 @@ class HomeDesktop extends StatelessWidget {
                             ),
                           ),
                           TyperAnimatedText(
-                            ' Backend Developer',
+                            ' Node Js Developer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1!.copyWith(
                               color: isDarkMode(context)

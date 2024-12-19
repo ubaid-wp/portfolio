@@ -23,6 +23,7 @@ final themeLight = ThemeData(
 
 final themeDark = ThemeData(
   brightness: Brightness.dark,
+  
   primaryColorDark: const Color(0xffC0392B),
   primaryColor: const Color(0xffC0392B),
   highlightColor: const Color(0xffC0392B),

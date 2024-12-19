@@ -33,10 +33,12 @@ class NavBarActionButton extends StatelessWidget {
           onPressed: () {
             scrollProvider.scroll(index);
           },
+          
           child: Padding(
             padding: Space.all(0.5, 0.45),
             child: Text(
               label,
+              style: AppText.b1,
             ),
           ),
         ),

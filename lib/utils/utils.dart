@@ -28,27 +28,27 @@ class StaticUtils {
   static const String openSourceBlack = 'assets/services/open_b.png';
 
   static const List<String> socialIconURL = [
-    "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-    "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
-    "https://img.icons8.com/android/480/ffffff/twitter.png",
+    // "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
+    // "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
+    // "https://img.icons8.com/android/480/ffffff/twitter.png",
     "https://img.icons8.com/metro/308/ffffff/linkedin.png",
     "https://img.icons8.com/material-rounded/384/ffffff/github.png",
     // "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
   ];
 
   static const List<String> socialLinks = [
-    "https://facebook.com/ahtsham.ch23",
-    "https://instagram.com/ahtsham.ch23",
-    "https://twitter.com/ahtsham1123",
-    "https://linkedin.com/in/ahtsham-mehboob-47b408209",
-    "https://github.com/Ahtsham0715",
+    // "https://facebook.com/ahtsham.ch23",
+    // "https://instagram.com/ahtsham.ch23",
+    // "https://twitter.com/ahtsham1123",
+    "https://linkedin.com/in/ubaid-rasool-867b64194",
+    "https://github.com/ubaid-wp",
     // "https://mhmzdev.medium.com"
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1LUvKfFO1pgu6_cwmxt3H8Mvc2lqMayAX/view?usp=drive_link';
+      'https://drive.google.com/file/d/1a4fLid_FN9BGKr-ZLWwcBYmNKTL5bIff/view?usp=sharing';
 
-  static const String gitHub = 'https://github.com/Ahtsham0715';
+  static const String gitHub = 'https://github.com/ubaid-wp';
 }
 
 class BodyUtils {
