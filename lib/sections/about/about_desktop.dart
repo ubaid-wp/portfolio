@@ -121,7 +121,7 @@ class AboutDesktop extends StatelessWidget {
                             children: [
                               AboutMeData(
                                 data: "Email",
-                                information: "ubaid@gmail.com",
+                                information: "ubaid.ips@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
